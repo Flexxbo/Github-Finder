@@ -42,6 +42,7 @@ class App extends Component {
   //setAlert if input field is empty
   setAlert = (msg, type) => {
     this.setState({ alert: { msg, type } });
+    setTimeout(() => this.setState({ alert: null }), 5000);
   };
 
   render() {
