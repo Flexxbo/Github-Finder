@@ -9,7 +9,7 @@ const User = ({ user, loading, getUser, getUserRepos, repos, match }) => {
     getUser(match.params.login);
     getUserRepos(match.params.login);
     //eslint-disable-next-line
-  },[]);
+  }, []);
 
   const {
     name,
@@ -17,7 +17,6 @@ const User = ({ user, loading, getUser, getUserRepos, repos, match }) => {
     avatar_url,
     location,
     bio,
-    blog,
     login,
     html_url,
     followers,
